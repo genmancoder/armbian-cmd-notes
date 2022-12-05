@@ -1,11 +1,11 @@
-## armbian-cmd-notes
+## Armbian CMD Notes
 
-## Getting all device status
+### Getting all device status
 ```bash
 nmcli device status
 ```
 
-## Getting all device
+### Getting all device
 ```bash
 nmcli dev wifi list
 ```
