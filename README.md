@@ -10,6 +10,11 @@ nmcli device status
 nmcli dev wifi list
 ```
 
+### checking ports and see who uses it.
+```bash
+sudo lsof -i -P -N
+```
+
 ### Setting up predictable names = /boot/ArmbianEnv.txt
 ```bash
 extraargs=net.ifnames=0
