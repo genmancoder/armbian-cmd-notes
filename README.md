@@ -41,4 +41,9 @@ options (A - append, D - delete, I - insert, R- replace, Z - zero counters, L-li
 -- i - in interface
 -- o - out interface
 
+- action component
+-j (accept, drop, reject, return)
+
 ```
+
+
