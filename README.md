@@ -26,3 +26,19 @@ iface br0 inet static
         broadcast 10.10.15.255
 
 ```
+### Useful information - iptables
+```bash
+iptables -t [table] -OPTIONS [CHAIN] [matching component] [action component]
+
+table (filter, nat, mangle, raw, security)
+chains (prerouting, input, forward, output, postrouting)
+options (A - append, D - delete, I - insert, R- replace, Z - zero counters, L-list, P  - policy, E - renamte, F - flush, N - new user defined chain, X - delete chain)
+
+- matching component
+-- p - protocol
+-- s - source ip
+-- d - destination ip
+-- i - in interface
+-- o - out interface
+
+```
