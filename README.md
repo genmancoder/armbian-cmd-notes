@@ -10,6 +10,11 @@ nmcli device status
 nmcli dev wifi list
 ```
 
+### Remove a package
+```bash
+sudo apt-get purge --auto-remove packagename
+```
+
 ### checking ports and see who uses it.
 ```bash
 sudo lsof -i -P -N
