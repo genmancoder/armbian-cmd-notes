@@ -57,3 +57,15 @@ options (A - append, D - delete, I - insert, R- replace, Z - zero counters, L-li
 ```
 
 
+### MK PPPOE Notifs
+```:global DateTime ([ / system clock get date ] . " " . [ / system clock get time ]);
+
+:local telegramToken "46109825455:AAEMr_M0lMmhztgWn6-wM-zRhOmfc4NT8Nc";
+
+:local chatId "-3917804044";
+
+:local adddress $"local-address";
+
+/tool fetch url="https://api.telegram.org/bot$telegramToken/sendmessage?chat_id=$chatId&text=<<=====** Genman Server **=====>> %0A PPP Name: $user %0A IP Address: $address %0A Status: PPPOE Down %0A Last Seen: $DateTime %0A Message: Pls dispatch technical team if necessary. %0A <<======** Server Notif **======>>" keep-result=no;
+```
+
